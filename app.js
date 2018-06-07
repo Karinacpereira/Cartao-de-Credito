@@ -30,7 +30,7 @@ function isValidCard(cardNumber){
     sum += arrayNumber[k];
   }
 
-  if (sum % 10 === 0){
+  if (sum % 10 === 0 && sum !== 0){
     return document.write('Ok, número de cartão válido!');
   } else {
     return document.write('Número de cartão inválido, por favor, tente novamente.')
